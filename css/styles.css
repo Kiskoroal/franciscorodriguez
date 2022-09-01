@@ -1,0 +1,569 @@
+:root {
+    --main-bg-color: #ffa43a;
+    --secondary-color: #ffedc6; 
+    --bg-jobs: #ffbf75;
+    --footer-bg: #914d00;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Slab", serif;
+  background: var(--main-bg-color);
+}
+
+/* Estilos al header */
+
+.contenedor header { 
+  width: 100%;
+  height: 1000px;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.contenedor header .icon-head {
+    padding: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.contenedor header nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    margin-top: -80px;
+}
+
+.contenedor header nav div a {
+   padding: 25px;
+   text-decoration: none;
+   color: white;
+   font-size: 22px;
+   margin: 0px 20px;
+}
+
+.contenedor header svg {
+    display: none;
+}
+
+.contenedor header nav div a:hover {
+    color: var(--secondary-color);
+    border-bottom: 1px solid white;
+}
+
+.contenedor header img {
+    width: 250px;
+    display: inline-block;
+    margin-left: 1550px;
+    transform: translate(-100px, 300px);
+}
+
+.contenedor header .textos{
+    transform: translateY(50px);
+    margin: 10px;
+}
+
+.contenedor header h1 {
+  font-size: 34px;
+  font-weight: 300;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.contenedor header h1 .name-title {
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 55px;
+}
+
+.contenedor header h1 .front {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 60px;
+}
+
+.contenedor header .h2-header {
+    font-size: 32px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contenedor header .parrafo-header {
+    font-size: 22px;
+    text-align: start;
+    margin-left: 60px;
+    margin-right: 500px;
+}
+
+/* Espaciado entre articles */
+
+.main article {
+    margin-top: 60px;
+    margin-bottom: 70px;
+}
+
+/* Estilos al apartado sobre mi */
+
+.main .sobre-mi {
+    transform: translateY(-90px);
+    margin-bottom: 20px;
+}
+
+.main .sobre-mi h2 {
+    font-size: 32px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main .sobre-mi p {
+    font-size: 22px;
+    text-align: start;
+    margin-left: 60px;
+    margin-right: 400px;
+}
+
+.main .sobre-mi .cita {
+    display: inline-block;
+    font-size: 22px;
+    text-align: start;
+    margin-top: 10px;
+    margin-left: 60px;
+    font-style: italic;
+    border-top: 2px solid #f76906;
+    padding: 10px;
+}
+
+.main .sobre-mi cite {
+    display: inline-block;
+    font-size: 22px;
+}
+
+/* Estilos al apartado de conocimientos */
+
+.main .conocimientos h2 {
+    font-size: 34px;
+    text-align: center;
+}
+
+.main .conocimientos .tecnologias-aprendidas {
+    display: flex;
+    justify-content: space-around;
+}
+
+.main .conocimientos .tecnologias-aprendidas img,
+.main .conocimientos .tecnologias-en-proceso img {
+    width: 150px;
+    margin: 20px;
+    padding: 25px;
+}
+
+.main .conocimientos .tecnologias-en-proceso {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos al apartado de proyectos */
+
+.main .proyectos {
+    margin: 20px;
+    padding: 10px;
+}
+
+.main .proyectos h2 {
+    text-align: center;
+    font-size: 34px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.main .proyectos .allt {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px;
+
+}
+
+.main .proyectos .t1,
+.main .proyectos .t2 {
+    margin-top: 10px;
+    background: var(--bg-jobs);
+    padding: 20px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: #ffedc6 1px 2px 2px 2px;
+}
+
+.main .proyectos .t1 .titulo-trabajo,
+.main .proyectos .t2 .titulo-trabajo{
+    padding: 10px;
+    margin: 5px;
+} 
+
+.main .proyectos .t1 .parrafo-trabajo,
+.main .proyectos .t2 .parrafo-trabajo {
+    padding: 10px;
+    margin: 5px;
+}
+
+.main .proyectos .allt .uno {
+    font-weight: 700;
+}
+
+.main .proyectos .allt .dos {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.main .proyectos .allt .t1 .tecnologia-usada,
+.main .proyectos .allt .t2 .tecnologia-usada {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.main .proyectos .allt .tecnologia-usada:hover {
+    border-bottom:1px solid #fff;
+    margin-bottom: 3px;
+}
+
+/* Ajustando icono internet para acceder a los proyectos */
+
+.main .proyectos .allt .web {
+    display: inline-flex;
+    position: absolute;
+    width: 40px;
+    transform: translate(250px, -37.5px);
+}
+
+.main .proyectos .allt .github {
+    transform: translate(315px, -43.5px);
+}
+
+/* Estilos del articulo contacto */
+
+.main .contacto {
+    padding: 20px;
+    margin: 40px;
+}
+
+.main .contacto h2,
+.main .contacto > p,
+.main .contacto a {
+    margin: 10px;
+}
+
+.main .contacto h2 {
+    font-size: 34px;
+    border-bottom: 2px dashed #f76906;
+}
+
+.main .contacto > p {
+    font-size: 22px;
+    color: black;
+    font-weight: 700;
+}
+.main .contacto a {
+    font-size: 24px;
+    color: white;
+}
+
+.main .contacto a:hover {
+    background: black;
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+.main .contacto p span {
+    color: white;
+}
+
+/* Estilos al footer */
+
+footer {
+    background: var(--footer-bg);
+    padding: 20px;
+}
+
+footer p {
+    font-size: 22px;
+    font-weight: 100;
+    text-align: center;
+}
+
+footer .redes {
+    margin: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .redes a img{
+    margin: 10px;
+    width: 100px;
+}
+
+/* Animacion boton ver mas */
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: transparent;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin-top: 115px;
+    margin-left: 70px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 230px;
+  }
+  .btn:hover {
+    color: white;
+    outline: 0;
+  }
+
+  .third {
+    border-color: white;
+    color: black;
+    box-shadow: 0 0 40px 40px white inset, 0 0 0 0 #3498db;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+  }
+  .third:hover {
+    box-shadow: 0 0 10px 0 #f76906 inset, 0 0 10px 4px #f76906;
+  }
+
+  /* Animación barra de carga python */
+  .loader {
+    margin: 20px 0;
+    text-align: center;
+    width: 150px;
+    margin: 150px auto 70px;
+    position: absolute;
+}
+
+.loader .loading_1 {
+    position: relative;
+    width: 100%;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    animation: turn 4s linear 1.75s infinite;
+}
+
+.loader .loading_1:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: white;
+    box-shadow: 10px 0px 15px 0px white;
+    animation: load 2s linear infinite;
+}
+
+.loader .loading_2 {
+    position: absolute;
+    width: 100%;
+    top: 10px;
+    color: black;
+    font-size: 22px;
+    text-align: center;
+    animation: bounce 2s linear infinite;
+}
+
+@keyframes load {
+    0% {
+        width: 0%;
+    }
+
+    87.5% {
+        width: 100%;
+    }
+}
+
+@keyframes turn {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    6.25%,
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    56.25%,
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        top: 10px;
+    }
+
+    12.5% {
+        top: 30px;
+    }
+}
+
+@keyframes about {
+   0% {
+    opacity: 0%;
+   }
+
+   100% {
+    opacity: 100%;
+   }
+}
+
+/* Responsive Web Design */
+
+@media screen and (max-width: 1715px) {
+    .contenedor header img {transform: translate(-250px ,300px);}
+}
+
+@media screen and (max-width: 1578px) {
+    .contenedor header img {transform: translate(-400px , 300px);}
+} 
+
+@media screen and (max-width: 1415px) {
+    .contenedor header img {transform: translate(-500px, 300px)}
+    .contenedor header nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding: 20px;
+        margin-top: -80px;
+    }
+}
+
+@media screen and (max-width: 1305px) {
+    .contenedor header img {display: none;}
+    .main .sobre-mi {margin-top: -40px;}
+}
+
+@media screen and (max-width: 1212px) {.contenedor header .textos, .contenedor header .btn {transform:translateY(200px)}}
+
+@media screen and (max-width: 1190px) {
+    .contenedor nav{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: end;
+        padding: 10px;
+        margin-top: -80px;
+    }
+
+    .contenedor header .textos {margin-right: 50px; margin-left: 40px;}
+    .contenedor header .btn {margin-right: 50px; margin-left: 100px;}
+}
+
+@media screen and (max-width: 1155px) {
+    .contenedor header nav .menu a {
+       text-decoration: none;
+       color: white;
+       font-size: 22px;
+       margin: 0px 20px;
+       padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 975px) {
+    .contenedor header h1 {font-size: 28px; margin-left: 40px;}
+    .contenedor header .name-title {font-size: 34px;}
+    .contenedor header .name-title {font-size: 32px;}
+    .contenedor .main .sobre-mi {margin: 100px 0px}
+    .contenedor .main .conocimientos {margin: 100px 0px;} 
+    .contenedor .main .proyectos {margin: 100px 0px;}
+    .contenedor header .parrafo-header { margin-left: 40px; margin-right: 0px;}
+    .contenedor .main .sobre-mi p {margin-left: 40px; margin-right: 20px;}
+}
+
+@media screen and (max-width: 920px) {
+    
+    /* Menu adaptable */
+    .contenedor header nav .menu{display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: top;
+        padding: 40px;
+        width: 27%;
+        height: 40%;
+        position: absolute;
+        background: var(--bg-jobs);
+        transition: transform 300ms; 
+        transform: translateY(-150%); 
+        z-index: 1;
+        }
+    
+        .contenedor header nav .menu a{
+            padding: 10px;
+            text-align: end;
+         }    
+     
+         .contenedor header nav .menu a:hover {
+             text-decoration: underline;
+             border-bottom: none;
+         }
+    
+         .menu--show {position: absolute; transform: translateY(0);}
+
+        /* Estilos del resto del documento */
+
+    
+
+    .contenedor header svg {display: inline-block; margin-left: 850px; transform: translateY(-70px); cursor: pointer;}
+   
+    .contenedor header .textos {text-align: start; transform: translateY(10px); vertical-align: top; }
+
+    .contenedor header .btn {transform: translateY(10px);}
+   
+    .contenedor .main .allt {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .contenedor .main .allt .t1, .contenedor .main .allt .t2 {margin-top: 20px;}
+
+    .contenedor .main .allt .t1 a img{
+        transform: translate(700px, -37.5px);
+    }
+
+    .contenedor .main .allt .t2 a .web {display: inline-flex;  width: 40px; transform: translate(700px, -37.5px);}
+    .contenedor .main .allt .t2 a .github {transform: translate(750px, -43.5px);}
+}
