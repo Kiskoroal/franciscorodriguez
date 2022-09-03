@@ -699,6 +699,9 @@ footer .redes img:hover {
     .contenedor .main .proyectos .allt .t1 .web {transform: translate(100px, 80.5px);}
     .contenedor .main .proyectos .allt .t2 .web {transform: translate(100px, 60.5px);}
     .contenedor .main .sobre-mi, .contenedor header .textos {margin-right: 40px;}
+    .contenedor header .textos .h2-header {text-align: start; transform: translateX(-25px);}
+    .contenedor .sobre-mi h2 {transform: translateX(-25px);}
+    .contenedor header .btn {transform: translateY(-10px);}
 }
 
 @media screen and (max-width: 350px) {
