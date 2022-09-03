@@ -250,6 +250,10 @@ body {
     transform: translate(315px, -43.5px);
 }
 
+.main .proyectos .allt .github:hover {
+    filter: invert(1);
+}
+
 /* Estilos del articulo contacto */
 
 .main .contacto {
@@ -312,6 +316,10 @@ footer .redes {
 footer .redes a img{
     margin: 10px;
     width: 100px;
+}
+
+footer .redes img:hover {
+    filter: invert(1);
 }
 
 /* Animacion boton ver mas */
@@ -475,7 +483,7 @@ footer .redes a img{
     .main .sobre-mi {margin-top: -40px;}
 }
 
-@media screen and (max-width: 1212px) {.contenedor header .textos, .contenedor header .btn {transform:translateY(200px)}}
+@media screen and (max-width: 1212px) {.contenedor header .textos {transform: translateY(100px);} .contenedor header .btn {transform: translateY(40px);} .contenedor header .textos p {margin-right: 20px;}}
 
 @media screen and (max-width: 1190px) {
     .contenedor nav{
@@ -513,41 +521,12 @@ footer .redes a img{
     .contenedor .main .sobre-mi p {margin-left: 40px; margin-right: 20px;}
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 930px) {
     
-    /* Menu adaptable */
-    .contenedor header nav .menu{display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: top;
-        padding: 40px;
-        width: 27%;
-        height: 40%;
-        position: absolute;
-        background: var(--bg-jobs);
-        transition: transform 300ms; 
-        transform: translateY(-150%); 
-        z-index: 1;
-        }
-    
-        .contenedor header nav .menu a{
-            padding: 10px;
-            text-align: end;
-         }    
-     
-         .contenedor header nav .menu a:hover {
-             text-decoration: underline;
-             border-bottom: none;
-         }
-    
-         .menu--show {position: absolute; transform: translateY(0);}
-
+    /* Eliminando menu en dispositivos portables */
+    .contenedor header nav .menu {display: none;} 
+      
         /* Estilos del resto del documento */
-
-    
-
-    .contenedor header svg {display: inline-block; margin-left: 850px; transform: translateY(-70px); cursor: pointer;}
-   
     .contenedor header .textos {text-align: start; transform: translateY(10px); vertical-align: top; }
 
     .contenedor header .btn {transform: translateY(10px);}
@@ -566,4 +545,167 @@ footer .redes a img{
 
     .contenedor .main .allt .t2 a .web {display: inline-flex;  width: 40px; transform: translate(700px, -37.5px);}
     .contenedor .main .allt .t2 a .github {transform: translate(750px, -43.5px);}
+}
+
+@media screen and (max-width: 908px){
+    .contenedor .main .proyectos .allt .t2 .web {transform: translate(620px, -37.5px);}
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(670px, -43.5px);}
+}
+
+@media screen and (max-width: 864px) {
+    .contenedor .main .proyectos .allt .t1 .web {transform: translate(610px, -37.5px);}
+}
+
+@media screen and (max-width: 830px) {
+    .contenedor .main .proyectos .allt .t2 .web {transform: translateX(590px);}
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(640px, -7.5px);}
+}
+
+@media screen and (max-width: 796px) {
+    .contenedor .main .proyectos .allt .t2 .web {transform: translateX(500px);}
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(550px, -7.5px)}
+
+    .contenedor .main .proyectos .allt .t1 .web {transform: translateX(500px);}
+}
+
+@media screen and (max-width: 714px) {
+    .contenedor .main .proyectos .allt .t1 .web{transform: translateX(450px);}
+    .contenedor .main .proyectos .allt .t2 .web{transform: translateX(450px);}
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(500px, -7.5px);}
+}
+
+@media screen and (max-width: 664px) {
+    .contenedor header .btn {transform: translateX(-20px);}
+    .contenedor .main .sobre-mi {margin: 0px 20px;}
+    .contenedor .main .sobre-mi p {
+        font-size: 18px;
+    }
+
+    .contenedor .main .sobre-mi cite {
+        font-size: 18px;
+    }
+
+    .contenedor .main .sobre-mi .cita {
+        font-size: 18px;
+    }
+
+    .contenedor .main .sobre-mi h2 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 656px) {
+    .contenedor .main .proyectos .allt .t1 .web,
+    .contenedor .main .proyectos .allt .t2 .web {
+        transform: translateX(400px);
+    }
+
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(460px, -7.5px);}
+}
+
+@media screen and (max-width: 620px) {
+    .contenedor .main .proyectos .allt .t1 .web,
+    .contenedor .main .proyectos .allt .t2 .web {
+        transform: translate(350px, -37.5px);
+    }
+
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(400px, -43.5px);}
+}
+
+@media screen and (max-width: 558px) {
+    .contenedor .main .sobre-mi cite {margin-left: 60px;}
+    
+    .contenedor .main .proyectos .allt .t1 .web,
+    .contenedor .main .proyectos .allt .t2 .web {
+        transform: translate(300px, -37.5px);
+    }
+
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(350px, -43.5px);}
+
+    .contenedor .main .conocimientos .tecnologias-aprendidas {flex-direction: column; align-items: center;}
+}
+
+@media screen and (max-width: 515px) {
+    .contenedor header .btn {transform: translateY(-20px); margin-left: 80px;}
+}
+
+@media screen and (max-width: 506px) {
+    
+    .contenedor .main .proyectos .allt .t1 .web,
+    .contenedor .main .proyectos .allt .t2 .web {
+        transform: translate(250px, -37.5px);
+    }
+
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(300px, -43.5px);}
+}
+
+@media screen and (max-width: 478px) {
+    .contenedor .main .proyectos .allt .t1 .tecnologia-usada,
+    .contenedor .main .proyectos .allt .t2 .tecnologia-usada {margin-top: 0px; transform: translateY(-10px);}
+
+    .parrafo-trabajo {margin-bottom: 0;}
+}
+
+@media screen and (max-width: 468px) {
+    .contenedor .main .sobre-mi .cita,
+    .contenedor .main .sobre-mi cite {margin-left: 40px;}
+    .contenedor header .btn {transform: translateY(-40px);}
+}
+
+@media screen and (max-width: 456px) {
+    .contenedor .main .proyectos .allt .t1 .tecnologia-usada,
+    .contenedor .main .proyectos .allt .t2 .tecnologia-usada {transform: translate(50px, -15px);}
+
+    .contenedor .main .proyectos .allt .t1 .tecnologia-usada:hover,
+    .contenedor .main .proyectos .allt .t2 .tecnologia-usada:hover {text-decoration: none; border-bottom: none; color: white;}
+
+    .contenedor .main .proyectos .allt .t1,
+    .contenedor .main .proyectos .allt .t2 {padding: 10px;}
+
+    .contenedor header .textos p {font-size: 18px;}
+    .contenedor header .textos h2 {font-size: 25px;}
+    .contenedor header h1 .name-title {font-size: 30px;}
+    .contenedor header h1 .front {font-size: 28px;}
+    .contenedor header .btn {transform: translateY(-20px);}
+
+    .contenedor header .textos {transform: translateY(50px);}
+}
+
+@media screen and (max-width: 444px) {
+    .contenedor header .btn {transform: translateY(-60px);}
+   
+    .contenedor .main .proyectos .allt .t1 .web,
+    .contenedor .main .proyectos .allt .t2 .web {
+        transform: translate(200px, -47.5px);
+        margin-left: 2px;
+    }
+
+    .contenedor .main .proyectos .allt .t2 .github {transform: translate(250px, -52.5px);} 
+}
+
+@media screen and (max-width: 414px) {
+    .contenedor .main .proyectos .allt .t2 .github {display: none;}
+    .contenedor .main .proyectos .allt .t2 .dos,
+    .contenedor .main .proyectos .allt .t1 .dos {display: none;}
+    .contenedor .main .proyectos .allt .t1 .uno,
+    .contenedor .main .proyectos .allt .t2 .uno {margin-bottom: 40px;}
+    .contenedor .main .proyectos .allt .t1 .tecnologia-usada,
+    .contenedor .main .proyectos .allt .t2 .tecnologia-usada {margin-left: -30px; padding: 20px; margin-top: 30px;}
+    .contenedor .main .proyectos .allt .t1 .web {transform: translate(120px, 80.5px);}
+    .contenedor .main .proyectos .allt .t2 .web {transform: translate(120px, 60.5px);}
+}
+
+@media screen and (max-width: 375px) {
+    .contenedor .main .proyectos .allt .t1 .web {transform: translate(100px, 80.5px);}
+    .contenedor .main .proyectos .allt .t2 .web {transform: translate(100px, 60.5px);}
+    .contenedor .main .sobre-mi, .contenedor header .textos {margin-right: 40px;}
+}
+
+@media screen and (max-width: 350px) {
+    .contenedor .main .proyectos .allt .t1 .web {transform: translate(100px, 80.5px);}
+    .contenedor .main .proyectos .allt .t2 .web {transform: translate(100px, 60.5px);}
+}
+
+@media screen and (max-width: 345px) {
+    .contenedor .main .sobre-mi, .contenedor header .textos {margin-right: 40px;}
 }

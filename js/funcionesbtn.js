@@ -8,6 +8,11 @@ $(document).ready(function() {
     conocimientos = $('#conocimientos').offset().top,
     trabajos = $('#proyectos').offset().top,
     contacto = $('#Contacto').offset().top;
+
+    //Variables menu responsive
+    const toggle = $('svg');
+    const menu = $('#menu');
+    const enlaces = $('html body header nav div a')
     
    //scroll menu
     
@@ -34,5 +39,4 @@ $(document).ready(function() {
             scrollTop: contacto - 200
         }, 500);
     });
-
 });
