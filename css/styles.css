@@ -523,6 +523,10 @@ footer .redes img:hover {
     .contenedor .main .proyectos {margin: 100px 0px;}
     .contenedor header .parrafo-header { margin-left: 40px; margin-right: 0px;}
     .contenedor .main .sobre-mi p {margin-left: 40px; margin-right: 20px;}
+    .contenedor .main .sobre-mi, .contenedor header .textos {margin-right: 40px;}
+    .contenedor header .textos .h2-header {text-align: start; transform: translateX(-25px);}
+    .contenedor .sobre-mi h2 {transform: translateX(-25px);}
+    .contenedor header .btn {transform: translateY(-10px);}
 }
 
 @media screen and (max-width: 960px) {
