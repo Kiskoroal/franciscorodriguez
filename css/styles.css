@@ -322,6 +322,10 @@ footer .redes img:hover {
     filter: invert(1);
 }
 
+/* Icono traducir */
+  
+ .contenedor .translate {display: none;}
+
 /* Animacion boton ver mas */
 .btn {
     box-sizing: border-box;
@@ -521,12 +525,18 @@ footer .redes img:hover {
     .contenedor .main .sobre-mi p {margin-left: 40px; margin-right: 20px;}
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 960px) {
     
     /* Eliminando menu en dispositivos portables */
     .contenedor header nav .menu {display: none;} 
       
-        /* Estilos del resto del documento */
+    /* Añadiendo icono para traducir página */
+    
+    .contenedor .translate {display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: end; transform: translate(400px , -375px);}
+    .contenedor .translate a img{display:block; width: 40px;}
+    .contenedor .translate:hover {filter: opacity(.7);}
+
+    /* Estilos del resto del documento */
     .contenedor header .textos {text-align: start; transform: translateY(10px); vertical-align: top; }
 
     .contenedor header .btn {transform: translateY(10px);}
@@ -637,6 +647,8 @@ footer .redes img:hover {
     }
 
     .contenedor .main .proyectos .allt .t2 .github {transform: translate(300px, -43.5px);}
+
+    .contenedor .translate {transform: translate(450px, -375px);}
 }
 
 @media screen and (max-width: 478px) {
@@ -693,6 +705,7 @@ footer .redes img:hover {
     .contenedor .main .proyectos .allt .t2 .tecnologia-usada {margin-left: -30px; padding: 20px; margin-top: 30px;}
     .contenedor .main .proyectos .allt .t1 .web {transform: translate(120px, 80.5px);}
     .contenedor .main .proyectos .allt .t2 .web {transform: translate(120px, 60.5px);}
+    .contenedor .translate {transform: translate(480px, -375px);}
 }
 
 @media screen and (max-width: 375px) {
@@ -702,6 +715,7 @@ footer .redes img:hover {
     .contenedor header .textos .h2-header {text-align: start; transform: translateX(-25px);}
     .contenedor .sobre-mi h2 {transform: translateX(-25px);}
     .contenedor header .btn {transform: translateY(-10px);}
+    .contenedor .translate{padding-left:10px;}
 }
 
 @media screen and (max-width: 350px) {
