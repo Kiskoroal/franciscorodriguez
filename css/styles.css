@@ -232,6 +232,7 @@ body {
     color: black;
 }
 
+
 .main .proyectos .allt .tecnologia-usada:hover {
     border-bottom:1px solid #fff;
     margin-bottom: 3px;
@@ -479,6 +480,14 @@ footer .redes img:hover {
         justify-content: end;
         padding: 20px;
         margin-top: -80px;
+    }
+
+    .contenedor .main .allt {
+        flex-direction: column;
+    }
+
+    .contenedor .main .allt .t1, .contenedor .main .allt .t2 {
+        margin-top: 15px;
     }
 }
 
