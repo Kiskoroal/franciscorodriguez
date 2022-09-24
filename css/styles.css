@@ -19,8 +19,8 @@ body {
 /* Estilos al header */
 
 .contenedor header { 
-  width: 100%;
-  height: 1000px;
+  width: 100% !important;
+  height: 1000px !important;
   background-attachment: fixed;
   background-size: cover;
 }
